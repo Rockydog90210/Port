@@ -1,0 +1,20 @@
+<DOCTYPE html>
+<html>
+    <head>
+    
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+	
+        <canvas id="spriteCanvas" width="300" height="500"></canvas>
+		
+		<button id="sunShirtSprite"> <img src="sunShirtSprite.png"> </button>
+		<button id="pinkHeartDress"> <img src="pinkHeartDress.png"> </button>
+		<button id="redDressWithRibbons"> <img src="RedDressWithRibbons.png"> </button>
+		<button id="greyCatShirt"> <img src="greyCatShirt.png"> </button>
+		
+        <script src="main.js"></script>
+        
+    </body>    
+</html>

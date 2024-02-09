@@ -1,0 +1,70 @@
+body{
+    background-image: url('star.gif');
+    cursor:url('nyan.png'),auto;
+}
+
+p,h1,h3{
+    color:white;
+    font-family: comic sans ms;
+    font-weight:900;
+    text-align:center;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    animation:text 10s infinite;
+}
+h6{
+    color:lightgray;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    opacity:80%;
+    text-align:center;
+}
+
+@keyframes text {
+  0% {color: red;}
+  20% {color: orange;}
+  40% {color: yellow;}
+  60% {color: green;}
+  80% {color: blue;}
+  80% {text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;}
+  80% {text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;}
+  95% {color: purple;}
+  100% {color: red;} 
+}
+
+.rbutt{
+    animation:rbutt 10s infinite;
+}
+
+
+
+@keyframes rbutt {
+    0% {background-color: red;}
+    20% {background-color: purple;}
+    40% {background-color: blue;}
+    60% {background-color: green;}
+    80% {background-color: yellow;}
+    95% {background-color: orange;}
+    100% {background-color: red;} 
+}
+
+
+.head{
+    background-image: url('head.gif');
+    padding-bottom: 2%;
+}
+
+.foot{
+    background-image: url('head.gif');
+    padding-bottom:30%;
+}
+
+.side{
+    background-image: url('rainbow.png');
+}
+
+.coco{
+    margin-left:-12px;    
+}
+
+.hide{
+    display:none;    
+}
