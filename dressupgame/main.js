@@ -100,6 +100,14 @@ shortYellowHairSprite.src ='shortYellowHairSprite.png';
 shortYellowHairSpriteButton = document.getElementById('shortYellowHairSprite');
 shortYellowHairSpriteButton.addEventListener("click",shortYellowHairSpriteFun);
 
+//longyellowhair
+let longYellowHairSprite = new Image();
+longYellowHairSprite.src ='longYellowHairSprite.png';
+
+longYellowHairSpriteButton = document.getElementById('longYellowHairSprite');
+longYellowHairSpriteButton.addEventListener("click",longYellowHairSpriteFun);
+
+
 
 //draw utfit button
 		//genOutfitButton = document.getElementById('genOutfit');
@@ -118,6 +126,7 @@ let emoAcessSpriteOn = false;
 let emoMakeupSpriteOn = false;
 let racconHairSpriteOn = false;
 let shortYellowHairSpriteOn = false;
+let longYellowHairSpriteOn = false;
 
 //functions
 
@@ -279,6 +288,17 @@ function shortYellowHairSpriteFun(){
 	}
 	drawOutfit();
 }
+function longYellowHairSpriteFun(){
+	
+	if (longYellowHairSpriteOn == false){
+		longYellowHairSpriteOn = true;
+		document.getElementById('longYellowHairSprite').style.backgroundColor = "grey";
+	}else {
+		longYellowHairSpriteOn = false;
+		document.getElementById('longYellowHairSprite').style.backgroundColor = "white";
+	}
+	drawOutfit();
+}
 
 function drawOutfit(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -334,6 +354,10 @@ function drawOutfit(){
 	}
 	if (shortYellowHairSpriteOn == true){
 		ctx.drawImage(shortYellowHairSprite, 50,0);
+	
+	}
+	if (longYellowHairSpriteOn == true){
+		ctx.drawImage(longYellowHairSprite, 50,0);
 	
 	}
 }
