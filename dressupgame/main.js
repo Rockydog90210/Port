@@ -66,7 +66,7 @@ function sunShirtSpriteFun(){
 		sunShirtSpriteOn = false;
 		document.getElementById('sunShirtSprite').style.backgroundColor = "white";
 	}
-	//drawOutfit();
+	drawOutfit();
 }
 
 function greyCatShirtFun(){
@@ -80,7 +80,21 @@ function greyCatShirtFun(){
 		greyCatShirtOn = false;
 		document.getElementById('greyCatShirt').style.backgroundColor = "white";
 	}
-	//drawOutfit();
+	drawOutfit();
+}
+
+function blueShortsFun(){
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	ctx.drawImage(personSprite, 50, 0);
+	ctx.drawImage(blueShorts, 50,0);
+	if (blueShortsOn == false){
+		blueShortsOn = true;
+		document.getElementById('blueShorts').style.backgroundColor = "grey";
+	}else {
+		blueShortsOn = false;
+		document.getElementById('blueShorts').style.backgroundColor = "white";
+	}
+	drawOutfit();
 }
 
 
@@ -95,7 +109,7 @@ function pinkHeartDressFun(){
 		pinkHeartDressOn = false;
 		document.getElementById('pinkHeartDress').style.backgroundColor = "white";
 	}
-	//drawOutfit();
+	drawOutfit();
 }
 
 function redDressWithRibbonsFun(){
@@ -109,27 +123,19 @@ function redDressWithRibbonsFun(){
 		redDressWithRibbonsOn = false;
 		document.getElementById('redDressWithRibbons').style.backgroundColor = "white";
 	}
-	//drawOutfit();
+	drawOutfit();
 }
 
 
-function blueShortsFun(){
-	//ctx.clearRect(0, 0, canvas.width, canvas.height);
-	//ctx.drawImage(personSprite, 50, 0);
-	//ctx.drawImage(blueShorts, 50,0);
-	if (blueShortsOn == false){
-		blueShortsOn = true;
-		document.getElementById('blueShorts').style.backgroundColor = "grey";
-	}else {
-		blueShortsOn = false;
-		document.getElementById('blueShorts').style.backgroundColor = "white";
-	}
-	//drawOutfit();
-}
 
 function drawOutfit(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.drawImage(personSprite, 50, 0);
+
+	if (blueShortsOn == true){
+		ctx.drawImage(blueShorts, 50,0);
+	
+	}
 	if (sunShirtSpriteOn == true){
 		ctx.drawImage(sunShirtSprite, 50,0);
 		
@@ -138,6 +144,7 @@ function drawOutfit(){
 		ctx.drawImage(greyCatShirt, 50,0);
 		
 	}
+	
 	if (pinkHeartDressOn == true){
 		ctx.drawImage(pinkHeartDress, 50,0);
 	
@@ -146,8 +153,5 @@ function drawOutfit(){
 		ctx.drawImage(redDressWithRibbons, 50,0);
 	
 	}
-	if (blueShortsOn == true){
-		ctx.drawImage(blueShorts, 50,0);
-	
-	}
 }
+	
