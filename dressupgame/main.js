@@ -22,6 +22,14 @@ greyCatShirt.src ='greyCatShirt.png';
 greyCatShirtButton = document.getElementById('greyCatShirt');
 greyCatShirtButton.addEventListener("click",greyCatShirtFun);
 
+//oneDshirt
+let oneDShirtSprite = new Image();
+oneDShirtSprite.src ='oneDShirtSprite.png';
+
+oneDShirtSpriteButton = document.getElementById('oneDShirtSprite');
+oneDShirtSpriteButton.addEventListener("click",oneDShirtSpriteFun);
+
+
 //heart dress
 let pinkHeartDress = new Image();
 pinkHeartDress.src ='pinkHeartDress.png';
@@ -39,8 +47,59 @@ redDressWithRibbonsButton.addEventListener("click",redDressWithRibbonsFun);
 //blue shorts
 let blueShorts = new Image();
 blueShorts.src ='blueShorts.png';
+
 blueShortsButton = document.getElementById('blueShorts');
 blueShortsButton.addEventListener("click",blueShortsFun);
+
+//pinkSkirt
+let pinkSkirtSprite = new Image();
+pinkSkirtSprite.src ='pinkSkirtSprite.png';
+
+pinkSkirtSpriteButton = document.getElementById('pinkSkirtSprite');
+pinkSkirtSpriteButton.addEventListener("click",pinkSkirtSpriteFun);
+
+//long pants
+let longPantsSprite = new Image();
+longPantsSprite.src ='longPantsSprite.png';
+
+longPantsSpriteButton = document.getElementById('longPantsSprite');
+longPantsSpriteButton.addEventListener("click",longPantsSpriteFun);
+
+//shoe
+let checkShoeSprite = new Image();
+checkShoeSprite.src ='checkShoeSprite.png';
+
+checkShoeSpriteButton = document.getElementById('checkShoeSprite');
+checkShoeSpriteButton.addEventListener("click",checkShoeSpriteFun);
+
+//accs
+let emoAcessSprite = new Image();
+emoAcessSprite.src ='emoAcessSprite.png';
+
+emoAcessSpriteButton = document.getElementById('emoAcessSprite');
+emoAcessSpriteButton.addEventListener("click",emoAcessSpriteFun);
+
+//makeup
+let emoMakeupSprite = new Image();
+emoMakeupSprite.src ='emoMakeupSprite.png';
+
+emoMakeupSpriteButton = document.getElementById('emoMakeupSprite');
+emoMakeupSpriteButton.addEventListener("click",emoMakeupSpriteFun);
+
+//racconHair
+let racconHairSprite = new Image();
+racconHairSprite.src ='racconHairSprite.png';
+
+racconHairSpriteButton = document.getElementById('racconHairSprite');
+racconHairSpriteButton.addEventListener("click",racconHairSpriteFun);
+
+//yellowhair
+let shortYellowHairSprite = new Image();
+shortYellowHairSprite.src ='shortYellowHairSprite.png';
+
+shortYellowHairSpriteButton = document.getElementById('shortYellowHairSprite');
+shortYellowHairSpriteButton.addEventListener("click",shortYellowHairSpriteFun);
+
 
 //draw utfit button
 		//genOutfitButton = document.getElementById('genOutfit');
@@ -48,17 +107,22 @@ blueShortsButton.addEventListener("click",blueShortsFun);
 
 let sunShirtSpriteOn = false;
 let greyCatShirtOn = false;
+let oneDShirtSpriteOn = false;
 let pinkHeartDressOn = false;
 let redDressWithRibbonsOn = false;
 let blueShortsOn = false;
-
+let longPantsSpriteOn = false;
+let pinkSkirtSpriteOn = false;
+let checkShoeSpriteOn = false;
+let emoAcessSpriteOn = false;
+let emoMakeupSpriteOn = false;
+let racconHairSpriteOn = false;
+let shortYellowHairSpriteOn = false;
 
 //functions
 
 function sunShirtSpriteFun(){
-	//ctx.clearRect(0, 0, canvas.width, canvas.height);
-	//ctx.drawImage(personSprite, 50, 0);
-	//ctx.drawImage(sunShirtSprite, 50,0);
+	
 	if (sunShirtSpriteOn == false){
 		sunShirtSpriteOn = true;
 		document.getElementById('sunShirtSprite').style.backgroundColor = "grey";
@@ -70,9 +134,7 @@ function sunShirtSpriteFun(){
 }
 
 function greyCatShirtFun(){
-	//ctx.clearRect(0, 0, canvas.width, canvas.height);
-	//ctx.drawImage(personSprite, 50, 0);
-	//ctx.drawImage(greyCatShirt, 50,0);
+	
 	if (greyCatShirtOn == false){
 		greyCatShirtOn = true;
 		document.getElementById('greyCatShirt').style.backgroundColor = "grey";
@@ -83,10 +145,22 @@ function greyCatShirtFun(){
 	drawOutfit();
 }
 
+
+function oneDShirtSpriteFun(){
+	
+	if (oneDShirtSpriteOn == false){
+		oneDShirtSpriteOn = true;
+		document.getElementById('oneDShirtSprite').style.backgroundColor = "grey";
+	}else {
+		oneDShirtSpriteOn = false;
+		document.getElementById('oneDShirtSprite').style.backgroundColor = "white";
+	}
+	drawOutfit();
+}
+
+
 function blueShortsFun(){
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	ctx.drawImage(personSprite, 50, 0);
-	ctx.drawImage(blueShorts, 50,0);
+
 	if (blueShortsOn == false){
 		blueShortsOn = true;
 		document.getElementById('blueShorts').style.backgroundColor = "grey";
@@ -97,11 +171,33 @@ function blueShortsFun(){
 	drawOutfit();
 }
 
+function longPantsSpriteFun(){
+
+	if (longPantsSpriteOn == false){
+		longPantsSpriteOn = true;
+		document.getElementById('longPantsSprite').style.backgroundColor = "grey";
+	}else {
+		longPantsSpriteOn = false;
+		document.getElementById('longPantsSprite').style.backgroundColor = "white";
+	}
+	drawOutfit();
+}
+
+function pinkSkirtSpriteFun(){
+	
+	if (pinkSkirtSpriteOn == false){
+		pinkSkirtSpriteOn = true;
+		document.getElementById('pinkSkirtSprite').style.backgroundColor = "grey";
+	}else {
+		pinkSkirtSpriteOn = false;
+		document.getElementById('pinkSkirtSprite').style.backgroundColor = "white";
+	}
+	drawOutfit();
+}
+
 
 function pinkHeartDressFun(){
-	//ctx.clearRect(0, 0, canvas.width, canvas.height);
-	//ctx.drawImage(personSprite, 50, 0);
-	//ctx.drawImage(pinkHeartDress, 50,0);
+	
 	if (pinkHeartDressOn == false){
 		pinkHeartDressOn = true;
 		document.getElementById('pinkHeartDress').style.backgroundColor = "grey";
@@ -113,9 +209,7 @@ function pinkHeartDressFun(){
 }
 
 function redDressWithRibbonsFun(){
-	//ctx.clearRect(0, 0, canvas.width, canvas.height);
-	//ctx.drawImage(personSprite, 50, 0);
-	//ctx.drawImage(redDressWithRibbons, 50,0);
+
 	if (redDressWithRibbonsOn == false){
 		redDressWithRibbonsOn = true;
 		document.getElementById('redDressWithRibbons').style.backgroundColor = "grey";
@@ -126,7 +220,65 @@ function redDressWithRibbonsFun(){
 	drawOutfit();
 }
 
+function checkShoeSpriteFun(){
+	
+	if (checkShoeSpriteOn == false){
+		checkShoeSpriteOn = true;
+		document.getElementById('checkShoeSprite').style.backgroundColor = "grey";
+	}else {
+		checkShoeSpriteOn = false;
+		document.getElementById('checkShoeSprite').style.backgroundColor = "white";
+	}
+	drawOutfit();
+}
 
+function emoAcessSpriteFun(){
+	
+	if (emoAcessSpriteOn == false){
+		emoAcessSpriteOn = true;
+		document.getElementById('emoAcessSprite').style.backgroundColor = "grey";
+	}else {
+		emoAcessSpriteOn = false;
+		document.getElementById('emoAcessSprite').style.backgroundColor = "white";
+	}
+	drawOutfit();
+}
+
+function emoMakeupSpriteFun(){
+	
+	if (emoMakeupSpriteOn == false){
+		emoMakeupSpriteOn = true;
+		document.getElementById('emoMakeupSprite').style.backgroundColor = "grey";
+	}else {
+		emoMakeupSpriteOn = false;
+		document.getElementById('emoMakeupSprite').style.backgroundColor = "white";
+	}
+	drawOutfit();
+}
+
+function racconHairSpriteFun(){
+	
+	if (racconHairSpriteOn == false){
+		racconHairSpriteOn = true;
+		document.getElementById('racconHairSprite').style.backgroundColor = "grey";
+	}else {
+		racconHairSpriteOn = false;
+		document.getElementById('racconHairSprite').style.backgroundColor = "white";
+	}
+	drawOutfit();
+}
+
+function shortYellowHairSpriteFun(){
+	
+	if (shortYellowHairSpriteOn == false){
+		shortYellowHairSpriteOn = true;
+		document.getElementById('shortYellowHairSprite').style.backgroundColor = "grey";
+	}else {
+		shortYellowHairSpriteOn = false;
+		document.getElementById('shortYellowHairSprite').style.backgroundColor = "white";
+	}
+	drawOutfit();
+}
 
 function drawOutfit(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -136,21 +288,52 @@ function drawOutfit(){
 		ctx.drawImage(blueShorts, 50,0);
 	
 	}
+	if (longPantsSpriteOn == true){
+		ctx.drawImage(longPantsSprite, 50,0);
+	
+	}
+	if (pinkSkirtSpriteOn == true){
+		ctx.drawImage(pinkSkirtSprite, 50,0);
+	
+	}
 	if (sunShirtSpriteOn == true){
 		ctx.drawImage(sunShirtSprite, 50,0);
+		
+	}
+	if (oneDShirtSpriteOn == true){
+		ctx.drawImage(oneDShirtSprite, 50,0);
 		
 	}
 	if (greyCatShirtOn == true){
 		ctx.drawImage(greyCatShirt, 50,0);
 		
 	}
-	
 	if (pinkHeartDressOn == true){
 		ctx.drawImage(pinkHeartDress, 50,0);
 	
 	}
 	if (redDressWithRibbonsOn == true){
 		ctx.drawImage(redDressWithRibbons, 50,0);
+	
+	}
+	if (checkShoeSpriteOn == true){
+		ctx.drawImage(checkShoeSprite, 50,0);
+	
+	}
+	if (emoAcessSpriteOn == true){
+		ctx.drawImage(emoAcessSprite, 50,0);
+	
+	}
+	if (emoMakeupSpriteOn == true){
+		ctx.drawImage(emoMakeupSprite, 50,0);
+	
+	}
+	if (racconHairSpriteOn == true){
+		ctx.drawImage(racconHairSprite, 50,0);
+	
+	}
+	if (shortYellowHairSpriteOn == true){
+		ctx.drawImage(shortYellowHairSprite, 50,0);
 	
 	}
 }
