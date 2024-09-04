@@ -304,6 +304,10 @@ function drawOutfit(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.drawImage(personSprite, 50, 0);
 	
+	if (longYellowHairSpriteOn == true){
+		ctx.drawImage(longYellowHairSprite, 50,0);
+	
+	}
 	if (checkShoeSpriteOn == true){
 		ctx.drawImage(checkShoeSprite, 50,0);
 	
@@ -354,10 +358,6 @@ function drawOutfit(){
 	}
 	if (shortYellowHairSpriteOn == true){
 		ctx.drawImage(shortYellowHairSprite, 50,0);
-	
-	}
-	if (longYellowHairSpriteOn == true){
-		ctx.drawImage(longYellowHairSprite, 50,0);
 	
 	}
 }
