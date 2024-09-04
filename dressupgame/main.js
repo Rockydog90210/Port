@@ -283,7 +283,11 @@ function shortYellowHairSpriteFun(){
 function drawOutfit(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.drawImage(personSprite, 50, 0);
-
+	
+	if (checkShoeSpriteOn == true){
+		ctx.drawImage(checkShoeSprite, 50,0);
+	
+	}
 	if (blueShortsOn == true){
 		ctx.drawImage(blueShorts, 50,0);
 	
@@ -318,10 +322,6 @@ function drawOutfit(){
 	}
 	if (redDressWithRibbonsOn == true){
 		ctx.drawImage(redDressWithRibbons, 50,0);
-	
-	}
-	if (checkShoeSpriteOn == true){
-		ctx.drawImage(checkShoeSprite, 50,0);
 	
 	}
 	if (emoMakeupSpriteOn == true){
