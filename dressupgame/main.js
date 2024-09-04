@@ -304,6 +304,14 @@ function drawOutfit(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.drawImage(personSprite, 50, 0);
 	
+	if (emoAcessSpriteOn == true){
+		ctx.drawImage(emoAcessSprite, 50,0);
+	
+	}
+	if (emoMakeupSpriteOn == true){
+		ctx.drawImage(emoMakeupSprite, 50,0);
+	
+	}
 	if (longYellowHairSpriteOn == true){
 		ctx.drawImage(longYellowHairSprite, 50,0);
 	
@@ -324,10 +332,6 @@ function drawOutfit(){
 		ctx.drawImage(pinkSkirtSprite, 50,0);
 	
 	}
-	if (emoAcessSpriteOn == true){
-		ctx.drawImage(emoAcessSprite, 50,0);
-	
-	}
 	if (sunShirtSpriteOn == true){
 		ctx.drawImage(sunShirtSprite, 50,0);
 		
@@ -346,10 +350,6 @@ function drawOutfit(){
 	}
 	if (redDressWithRibbonsOn == true){
 		ctx.drawImage(redDressWithRibbons, 50,0);
-	
-	}
-	if (emoMakeupSpriteOn == true){
-		ctx.drawImage(emoMakeupSprite, 50,0);
 	
 	}
 	if (racconHairSpriteOn == true){
