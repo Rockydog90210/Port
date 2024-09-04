@@ -43,8 +43,8 @@ blueShortsButton = document.getElementById('blueShorts');
 blueShortsButton.addEventListener("click",blueShortsFun);
 
 //draw utfit button
-genOutfitButton = document.getElementById('genOutfit');
-genOutfitButton.addEventListener("click",drawOutfit);
+		//genOutfitButton = document.getElementById('genOutfit');
+		//genOutfitButton.addEventListener("click",drawOutfit);
 
 let sunShirtSpriteOn = false;
 let greyCatShirtOn = false;
