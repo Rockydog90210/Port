@@ -14,7 +14,7 @@ discripor = ['nice', 'raining', 'clear', 'cloudy', 'dark', 'warm', 'cold', 'stor
 
 timeOfDay =['morning', 'afternoon', 'evening', 'night']
 
-asdf = ['Annie', 'Alex', 'Justin', 'Grace', 'Jullies', 'Coco', 'Nick', 'Ellie', 'Addie', 'Rachel', 'Cat', 'Keven', 'mr teacher man','Mr. Neaveill']
+asdf = ['Annie', 'Alex', 'siren', 'Grace', 'Jullies', 'Coco', 'Nick', 'Ellie', 'Addie', 'Rachel', 'Cat', 'Keven', 'mr teacher man','Mr. Neaveill']
 
 activity = ['fishing', 'on a walk', 'running', 'shopping', 'snorkeling', 'hunting', 'cooking', 'danceing', 'singing','smokeing' ]
 
@@ -69,4 +69,5 @@ function result() {
   
   story.textContent = newStory;
 }
+
 
