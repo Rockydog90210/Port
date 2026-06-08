@@ -1,9 +1,23 @@
 body{
 	background-color:#b1d3e2;
+	overflow:hidden;
+	
 }
 .main {
 	text-align:center;
 }
 .inLine {
 	display:inline;
+}
+#episodeTitle{
+	font-size:25px;
+	
+}
+#wrongOrRight{
+	font-Size:17px;
+}
+
+.list {
+	font-size: 19px;
+	
 }
